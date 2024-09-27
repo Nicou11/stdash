@@ -26,7 +26,7 @@ plt.bar(time.index, time.values)
 plt.plot(time.index, time.values, marker='o', color='r')
 plt.xlabel('Request Time')
 plt.ylabel('Count')
-
+plt.xticks(rotation = 45)
 
 # 화면에 그리기
 st.pyplot(plt)
