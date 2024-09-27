@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-RUN git clone -b 0.2/deploy https://github.com/nicou11/stdash.git .
+RUN git clone -b 0.3/docker https://github.com/nicou11/stdash.git .
 
 RUN pip install -r requirements.txt
 
