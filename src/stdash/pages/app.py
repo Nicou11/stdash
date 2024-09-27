@@ -4,6 +4,10 @@ import matplotlib.pyplot as plt
 import requests
 
 st.title('요청 / 처리 건수(h)')
+#st.sidebar.page_link("streamlit.py", label="Home")
+st.sidebar.page_link("pages/app.py", label="Requests by Date and Time")
+st.sidebar.page_link("pages/req_pre.py", label="Request and Prediction")
+st.sidebar.markdown("---")
 
 def load_data():
     url = 'http://43.202.66.118:8006/all'
